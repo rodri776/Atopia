@@ -13,19 +13,49 @@ nav {
     padding: 10px 20px;
 }
 
-/* Style for the search bar */
+/* Style the search bar */
 nav .search-bar {
     display: flex;
     align-items: center;
+    background: linear-gradient(to right, #F6F2E3, #D3C6A1); /* Gradient background */
+    border-radius: 50px; /* Very curved corners */
+    padding: 5px 20px; /* Some padding for spacing */
+    width: 100%; /* Full width */
+    max-width: 300px; /* Limit width (optional) */
+    position: relative;
 }
 
-nav input[type="text"] {
-    padding: 5px;
-    margin-right: 10px;
+/* Style the input field */
+nav .search-bar input {
+    width: 100%; /* Make input fill the available space */
+    border: none; /* Remove the default border */
+    background: transparent; /* Transparent background to show the gradient */
+    padding: 10px;
+    font-size: 16px;
+    color: #333; /* Text color */
+    border-radius: 50px; /* Very curved corners */
+    outline: none; /* Remove the outline on focus */
 }
 
-nav button {
-    padding: 5px;
+/* Add the search icon */
+nav .search-bar button {
+    background: transparent;
+    border: none;
+    padding: 0;
+    position: absolute;
+    left: 10px; /* Align the icon to the far right */
+    cursor: pointer;
+}
+
+nav .search-bar button svg {
+    width: 20px;
+    height: 20px;
+    color: #333; /* Icon color */
+}
+
+/* Optional: Add focus styles for the input */
+nav .search-bar input:focus {
+    border: 2px solid #D3C6A1; /* Slight border on focus for visual feedback */
 }
 
 /* Style for the logo */
