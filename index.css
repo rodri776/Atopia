@@ -1,0 +1,47 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+}
+
+/* Flexbox for horizontal alignment */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Style for search bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.search-bar input {
+    padding: 5px;
+}
+
+/* Center the logo */
+.logo img {
+    height: 50px; /* Adjust as needed */
+}
+
+/* Style navigation links */
+ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
