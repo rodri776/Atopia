@@ -3,7 +3,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atopia - Social Media Revolution</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://atopia.world/index.css">
+    <!-- <link rel="stylesheet" href="https://atopia.world/index.css"> --> 
 </head>
 <body>
     <header>
@@ -17,42 +17,85 @@
             <div class="logo">
                 <img src="Atopia_Logo.png" alt="Atopia Logo">
             </div>
-            <ul>
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#plans">Plans</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <div class="nav-bar">
+                <ul>
+                    <li>
+                        <a href="#home">
+                            <img src="Nav_Icons/home-icon.svg" alt="Home">
+                            <span style="color: #1877F2;">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about">
+                            <img src="Nav_Icons/about-icon.svg" alt="About">
+                            <span style="color: #EA4335;">About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#blog">
+                            <img src="Nav_Icons/blog-icon.svg" alt="Blog">
+                            <span style="color: #2BAB66;">Blog</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#plans">
+                            <img src="Nav_Icons/plans-icon.svg" alt="Plans">
+                            <span style="color: #1877F2;">Plans</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            <img src="Nav_Icons/contact-icon.svg" alt="Contact">
+                            <span style="color: #EA4335;">Contact</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Sandbox">
+                            <img src="Nav_Icons/playground.svg" alt="Sandbox">
+                            <span style="background-image: linear-gradient(135deg, rgba(43, 171, 102), rgba(213, 34, 34), rgba(101, 190, 255)); -webkit-background-clip: text; background-clip: text; color: transparent;">Sandbox</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="slider"></div> <!-- Add the slider here -->
+            </div>
         </nav>
-    </header>
+    </header> 
+    <script src="index.js"></script>
     
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Join the Social Media Revolution!</h1>
-            <button>Sign Up For Updates!</button>
+    <div class="homepage-container">
+        <!-- Left: Card Slider -->
+        <div class="slider-container">
+            <button class="slider-btn left">&lt;</button>
+            <div class="slider-content">
+                <div class="slide active">
+                    <h2>How Atopia Works</h2>
+                    <img src="Logo2.svg" alt="Atopia Logo">
+                    <div class="feature">
+                        <img src="Slide1-Icons/widgets.svg" alt="Widgets">
+                        <span><strong>Widgets:</strong> On Atopia, user profiles are composed of widgets, empowering you with total control over your UI.</span>
+                    </div>
+                    <div class="feature">
+                        <img src="Slide1-Icons/graph.svg" alt="Graph">
+                        <span><strong>Graph:</strong> Atopia employs graph theory to map connections between users based on shared interests.</span>
+                    </div>
+                    <div class="feature">
+                        <img src="Slide1-Icons/AI.svg" alt="AI">
+                        <span><strong>AI:</strong> Utilizing LLM and GOFAI, Atopia enhances user experience through personalized content recommendations.</span>
+                    </div>
+                    <div class="feature">
+                        <img src="Slide1-Icons/privacy.svg" alt="Privacy">
+                        <span><strong>Privacy:</strong> Fine-grained control over profile data ensures privacy.</span>
+                    </div>
+                </div>
+            </div>
+            <button class="slider-btn right">&gt;</button>
         </div>
-    </section>
     
-    <section class="info">
-        <h2>How Atopia Works</h2>
-        <div class="info-grid">
-            <div class="info-item">
-                <h3>Widgets</h3>
-                <p>User profiles are composed of widgets, allowing total UI control.</p>
-            </div>
-            <div class="info-item">
-                <h3>Graph</h3>
-                <p>Uses graph theory to map connections between users based on shared interests.</p>
-            </div>
-            <div class="info-item">
-                <h3>AI</h3>
-                <p>Enhances user experience with personalized content recommendations.</p>
-            </div>
-            <div class="info-item">
-                <h3>Privacy</h3>
-                <p>Users have fine-grained control over profile data visibility.</p>
-            </div>
+        <!-- Right: Globe SVG and Button -->
+        <div class="globe-container">
+            <img src="globe.svg" alt="Globe Graphic">
+            <h1>The Only Social You’ll Ever Need.</h1>
+            <button class="cta-button">Sign Up For Updates!</button>
         </div>
-    </section>
+    </div>
 </body>
